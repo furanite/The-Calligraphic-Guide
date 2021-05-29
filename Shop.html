@@ -1,0 +1,355 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="TCGSS/shops.css">
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+        var total = 0;
+        $(document).ready(function () {
+            $("#cart").click(function(){
+                $("#cartcontent").slideToggle();
+            });
+            $("#mover").mousedown(function () {
+                $("#tblt").show();
+                $("#cart").slideUp();
+            });
+            $("#mover").mouseup(function () {
+                $("#tblt").hide();
+                $("#cart").slideDown();
+            });
+            $("#cart1").click(function(){
+                $("#cartcontent #tblt thead").append("<tr><td>"+$("#IslamicCalligraphy h2:first").text()+"</td><td>"+39+"</td></tr>");
+                total+=39;
+                $("#totalp").text(total);
+            });
+            $("#cart2").click(function () {
+                $("#cartcontent #tblt thead").append("<tr><td>" +$("#IslamicCalligraphy h2:gt(0)").text()  + "</td><td>" + 22 + "</td></tr>");
+                total += 22;
+                $("#totalp").text(total);
+            });
+            $("#cart3").click(function () {
+                $("#cartcontent #tblt thead").append("<tr><td>" + $("#WCalli h2:first").text() + "</td><td>" + 39 + "</td></tr>");
+                total += 39;
+                $("#totalp").text(total);
+            });
+            $("#cart4").click(function () {
+                $("#cartcontent #tblt thead").append("<tr><td> Broad Nib Holder(Nibs Included) </td><td>" + 65 + "</td></tr>");
+                total += 65;
+                $("#totalp").text(total);
+            });
+            $("#cart5").click(function () {
+                $("#cartcontent #tblt thead").append("<tr><td>Calligraphy Set (Broad + Pointed)</td><td>" + 159 + "</td></tr>");
+                total += 159;
+                $("#totalp").text(total);
+            });
+            $("#cart6").click(function () {
+                $("#cartcontent #tblt thead").append("<tr><td>" + $("#CG h2:first").text() + "</td><td>" + 35 + "</td></tr>");
+                total += 35;
+                $("#totalp").text(total);
+            });
+            $("#cart7").click(function () {
+                $("#cartcontent #tblt thead").append("<tr><td>" + $("#CG h2:gt(0)").text() + "</td><td>undefined</td></tr>");
+            });
+            $("#cart8").click(function () {
+                $("#cartcontent #tblt thead").append("<tr><td>" + $("#CEquip h2:first").text() + "</td><td>" + 22 + "</td></tr>");
+                total += 22;
+                $("#totalp").text(total);
+            });
+            $("#cart9").click(function () {
+                $("#cartcontent #tblt thead").append("<tr><td>Winsor & Newton Red Ink</td><td>"+22+"</td></tr>");
+                total += 22;
+                $("#totalp").text(total);
+            });
+            $("#cart10").click(function () {
+                $("#cartcontent #tblt thead").append("<tr><td>Speedball Silver Ink</td><td>"+30+"</td></tr>");
+                total += 30;
+                $("#totalp").text(total);
+            });
+            $("#cart11").click(function () {
+                $("#cartcontent #tblt thead").append("<tr><td>" + $("#CEquip h2:gt(2)").text() + "</td><td>"+30+"</td></tr>");
+                total += 30;
+                $("#totalp").text(total);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a href="Home Page.html" target="_blank"><img id="logo" src="TCG.png" alt="TGC Logo"></a>
+    <div id="navitop" class="container">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#IslamicCalligraphy" style="color: black;">
+                        <h2 style=" text-align: center;">Islamic Calligraphy</h2>
+                    </a>
+                    <ul>
+                        <li><a href="ICHistory.html">History</a></li>
+                        <li><a href="RIIC.html">Religious Importance</a></li>
+                        <li><a href="CIC.html">Contemporary Calligraphy</a></li>
+                        <li><a href="ICG.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li style="margin-left: 30px;" style="color: black; text-align: center;">
+                    <a href="#WCalli" style="color: black;">
+                        <h2 style=" text-align: center;">Western Calligraphy</h2>
+                    </a>
+                    <ul>
+                        <li><a href="WCH.html">History</a></li>
+                        <li><a href="WRC.html">Religious Importance</a></li>
+                        <li><a href="WCC.html">Contemporary Calligraphy</a></li>
+                        <li><a href="WG.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li style="margin-left: 30px;">
+                    <a href="#CG" style="color: black;">
+                        <h2 style=" text-align: center;">Calligraphy Guides</h2>
+                    </a>
+                    <ul>
+                        <li style="margin: 15px;"><a href="ICGu.html">Islamic Calligraphy</a></li>
+                        <li><a href="WCG.html">Western Calligraphy</a></li>
+                    </ul>
+                </li>
+                <li style="margin-left: 30px;">
+                    <a href="#CEquip" style="color: black;">
+                        <h2 style=" text-align: center;">Calligraphy Equipment</h2>
+                    </a>
+                    <ul>
+                        <li style="margin-top: 30px;"><a href="Shop.html">Shop</a></li>
+                    </ul>
+                </li>
+                <li style="margin-left: 30px;">
+                    <a href="Contact me.html" style="color: black;">
+                        <h2 style=" text-align: center;">Contact</h2>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="main">
+            <h1 style="font-size: 10em; font-weight: 70; color: rgb(126, 3, 3);">Shop</h1>
+            <p style="background-color: transparent; color: rgb(126, 3, 3);">Find the tools to start your Calligraphic journey!</p>
+            <h4 style="margin-top: 10px;">Disclaimer: We are not manufacturers or retailers of the products displayed.</h4>
+            <h4>Prices are subject to change.</h4>
+        </section>
+        <section id="IslamicCalligraphy">
+            <h1 id="h1IC">For Islamic Calligraphy</h1>
+            <div class="cardsection">
+                <div class="card">
+                    <div id="cart1">Add</div>
+                    <div class="cardimg" id="I1"></div>
+                    <div class="cardstxt">
+                        <h2>Pilot Parallel Pen 3.8 mm</h2>
+                        <p>
+                            <a target="_blank" href="https://www.jarir.com/sa-en/arts-crafts-supplies/calligraphy-lettering-sets/pilot-parallel-calligraphy-pens-492078.html">Buy
+                            Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice">
+                        <div class="price1">
+                        Price: 39 SAR
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardimg" id="I2"></div>
+                    <div id="cart2">Add</div>
+                    <div class="cardstxt">
+                        <h2>Qalam<br><br></h2> 
+                        <p>
+                            <a target="_blank" href="https://www.jarir.com/sa-en/arts-crafts-supplies/calligraphy-lettering-sets/non-branded-calligraphy-pens-438619.html">Buy
+                            Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice"> Price: 11 SAR</div>
+                </div>
+                </div>
+        </section>
+        <section id="WCalli">
+            <h1 id="h1wc" style=" background-color: rgb(0,0,0, 0.6);">For Latin Calligraphy</h1>
+            <div class="cardsection">
+                <div class="card">
+                    <div class="cardimg" id="w1"></div>
+                    <div id="cart3">Add</div>
+                    <div class="cardstxt">
+                        <h2>Pilot Parallel Pen 3.8 mm</h2>
+                        <p>
+                            <a target="_blank"
+                                href="https://www.jarir.com/sa-en/arts-crafts-supplies/calligraphy-lettering-sets/pilot-parallel-calligraphy-pens-492078.html">Buy
+                                Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice">
+                        <div class="price">
+                            Price: 39 SAR
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardimg" id="w2"></div>
+                    <div id="cart4">Add</div>
+                    <div class="cardstxt">
+                        <h2>Broad Nib Holder (Nibs Included)<br></h2>
+                        <p>
+                            <a target="_blank"
+                                href="https://www.jarir.com/sa-en/arts-crafts-supplies/calligraphy-lettering-sets/speedball-calligraphy-pens-15949.html">Buy
+                                Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice">
+                        <div class="price">
+                            Price: 65 SAR
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardimg" id="w3"></div>
+                    <div id="cart5">Add</div>
+                    <div class="cardstxt">
+                        <h2>Calligraphy Set (Broad + Pointed)</h2>
+                        <p>
+                            <a target="_blank"
+                                href="https://www.jarir.com/sa-en/arts-crafts-supplies/calligraphy-lettering-sets/speedball-calligraphy-pens-478161.html">Buy
+                                Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice">
+                        <div class="price">
+                            Price: 159 SAR
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="CG">
+            <h1 id="h1cg" style="font-size: 9em; margin-bottom: 40px;">Paper</h1>
+            <div class="cardsection">
+                <div class="card">
+                    <div class="cardimg" id="p1"></div>
+                    <div id="cart6">Add</div>
+                    <div class="cardstxt">
+                        <h2>Strathmore Calligraphy Pad</h2>
+                        <p>
+                            <a target="_blank"
+                                href="https://www.jarir.com/sa-en/arts-crafts-supplies/engineering-supplies/inks/winsor-newton-drawing-inks-161496.html">Buy
+                                Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice">
+                        <div class="price">
+                            Price: 35 SAR
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardimg" id="p2"></div>
+                    <div id="cart7">Add</div>
+                    <div class="cardstxt">
+                        <h2>Onion Paper<br><br></h2>
+                        <p>
+                            <a target="_blank"
+                                href="https://www.thepapermillstore.com/paper-mills/the-paper-mill-store/fidelity-onion-skin">Buy
+                                Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice">
+                        <div class="price">
+                            Starts: ~37.40 SAR
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="CEquip">
+            <h1 style="color: rgb(126, 3, 3);">Inks</h1>
+            <div class="cardsection">
+                <div class="cardink" id="ink">
+                    <div class="cardimg" id="ink1"></div>
+                    <div id="cart8">Add</div>
+                    <div class="cardstxt">
+                        <h2>Winsor & Newton Black Ink</h2>
+                        <p>
+                            <a target="_blank"
+                                href="https://www.jarir.com/sa-en/arts-crafts-supplies/calligraphy-lettering-sets/pilot-parallel-calligraphy-pens-492078.html">Buy
+                                Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice">
+                        <div class="price">
+                            Price: 22 SAR
+                        </div>
+                    </div>
+                </div>
+                <div class="cardink">
+                    <div class="cardimg" id="ink2"></div>
+                    <div id="cart9">Add</div>
+                    <div class="cardstxt">
+                        <h2>Winsor & Newton Red Ink</h2>
+                        <p>
+                            <a target="_blank"
+                                href="https://www.jarir.com/sa-en/arts-crafts-supplies/calligraphy-lettering-sets/speedball-calligraphy-pens-15949.html">Buy
+                                Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice">
+                        <div class="price">
+                            Price: 22 SAR
+                        </div>
+                    </div>
+                </div>
+                <div class="cardink">
+                    <div class="cardimg" id="ink3"></div>
+                    <div id="cart10">Add</div>
+                    <div class="cardstxt">
+                        <h2>Speedball Silver Ink</h2>
+                        <p>
+                            <a target="_blank"
+                                href="https://www.jarir.com/sa-en/arts-crafts-supplies/engineering-supplies/inks/speedball-calligraphy-ink-drawing-inks-478128.html">Buy
+                                Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice">
+                        <div class="price">
+                            Price: 30 SAR
+                        </div>
+                    </div>
+                </div>
+                <div class="cardink">
+                    <div class="cardimg" id="ink4"></div>
+                    <div id="cart11">Add</div>
+                    <div class="cardstxt">
+                        <h2>Speedball Gold Ink</h2>
+                        <p>
+                            <a target="_blank"
+                                href="https://www.jarir.com/sa-en/arts-crafts-supplies/engineering-supplies/inks/speedball-calligraphy-ink-drawing-inks-478127.html">Buy
+                                Now!</a>
+                        </p>
+                    </div>
+                    <div class="cprice">
+                        <div class="price">
+                            Price: 30 SAR
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="cart">
+            Cart
+        </div>
+        <div id="cartcontent">
+            <h2 id="mover">Cart</h2>
+            <div id="tbl">
+                <table id="tblt" border="1px">
+                    <thead>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </thead>
+                    <tr><th>Total:</th><td id="totalp">0</td></tr>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

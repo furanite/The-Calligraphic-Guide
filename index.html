@@ -1,0 +1,145 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Calligraphic Guide</title>
+    <link rel="stylesheet" href="TCGSS/hPage.css">
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#IslamicCalligraphy").hover(function () {
+                $("#ICinfo").toggle("slow");
+                $("#IslamicCalligraphy .insection a").slideToggle(1000);
+            });
+            $("#h1IC").mouseover(function () {
+                $("#h1IC").text("الخط الإسلامي");
+            });
+            $("#h1IC").mouseout(function () {
+                $("#h1IC").text("Islamic Calligraphy");
+            });
+            $("#WCalli").hover(function () {
+                $("#wcInfo").toggle("slow");
+                $("#WCAlli .insection a").slideToggle(1000);
+            });
+            $("#CG").hover(function () {
+                $("#cgInfo").toggle("slow");
+                $("#CG .insection a").slideToggle(1000);
+            });
+            $("#CEquip").hover(function () {
+                $("#ceqInfo").toggle("slow");
+                $("#CEquip .insection a").slideDown(1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a href="Home Page.html" target="_blank"><img id="logo" src="TCG.png" alt="TGC Logo"></a>
+    <div id="navitop" class="container">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#IslamicCalligraphy" style="color: black;">
+                        <h2 style=" text-align: center;">Islamic Calligraphy</h2>
+                    </a>
+                    <ul>
+                        <li><a href="ICHistory.html">History</a></li>
+                        <li><a href="RIIC.html">Religious Importance</a></li>
+                        <li><a href="CIC.html">Contemporary Calligraphy</a></li>
+                        <li><a href="ICG.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li style="margin-left: 30px;" style="color: black; text-align: center;">
+                    <a href="#WCalli" style="color: black;">
+                        <h2 style=" text-align: center;">Western Calligraphy</h2>
+                    </a>
+                    <ul>
+                        <li><a href="WCH.html">History</a></li>
+                        <li><a href="WRC.html">Religious Importance</a></li>
+                        <li><a href="WCC.html">Contemporary Calligraphy</a></li>
+                        <li><a href="WG.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li style="margin-left: 30px;">
+                    <a href="#CG" style="color: black;">
+                        <h2 style=" text-align: center;">Calligraphy Guides</h2>
+                    </a>
+                    <ul>
+                        <li style="margin: 15px;"><a href="ICGu.html">Islamic Calligraphy</a></li>
+                        <li><a href="WCG.html">Western Calligraphy</a></li>
+                    </ul>
+                </li>
+                <li style="margin-left: 30px;">
+                    <a href="#CEquip" style="color: black;">
+                        <h2 style=" text-align: center;">Calligraphy Equipment</h2>
+                    </a>
+                    <ul>
+                        <li style="margin-top: 30px;"><a href="Shop.html">Shop</a></li>
+                    </ul>
+                </li>
+                <li style="margin-left: 30px;">
+                    <a href="Contact me.html" style="color: black;">
+                        <h2 style=" text-align: center;">Contact</h2>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="main">
+            <h1 style="font-size: 10em; font-weight: 70;">Calligraphy</h1>
+            <p style="background-color: transparent; color: black;">From the greek word <strong>καλλιγραφία</strong>
+                <br> <strong>κάλλος</strong> (beautiful) + <strong>γράφω</strong> (to draw)</p>
+        </section>
+        <section id="IslamicCalligraphy">
+            <h1 id="h1IC">Islamic Calligraphy</h1>
+            <p id="ICinfo">
+                Discover the unbelievably beautiful world of Islamic Calligraphy!<br>
+                Islamic calligraphy is mostly scribed in Arabic, Farsi, and Urdu.<br>
+                Thus Islamic calligraphy is synonymous with Arabic calligraphy.<br>
+                There are many styles and scripts in Islamic Calligraphy.
+            </p>
+            <div>
+                <ul class="insection">
+                    <li><a href="ICHistory.html">History</a></li>
+                    <li><a href="RIIC.html">Religious Importance</a></li>
+                    <li><a href="CIC.html">Contemporary Calligraphy</a></li>
+                    <li><a href="ICG.html">Gallery</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="WCalli">
+            <h1 id="h1wc" style=" background-color: rgb(0,0,0, 0.6);">Western Calligraphy</h1>
+            <p id="wcInfo">
+                Discover the history and religious importance of western calligraphy. <br>
+                Lay thine eyes upon contemporary calligraphy!
+            </p>
+            <ul class="insection">
+                <li><a href="WCH.html">History</a></li>
+                <li><a href="WRC.html">Religious Importance</a></li>
+                <li><a href="WCC.html">Contemporary Calligraphy</a></li>
+                <li><a href="WG.html">Gallery</a></li>
+            </ul>
+        </section>
+        <section id="CG">
+            <h1 id="h1cg" style="font-size: 9em; margin-bottom: 84px;">Calligraphy Guides</h1>
+            <p id="cgInfo">
+                Find the best guiedsheets by experienced calligraphers for different styles/scripts <br>of calligraphy
+                in both Arabic and English.
+            </p>
+            <ul class="insection">
+                <li><a href="ICGu.html">Islamic Calligraphy</a></li>
+                <li><a href="WCG.html">Western Calligraphy</a></li>
+            </ul>
+        </section>
+        <section id="CEquip">
+            <h1 style="color: rgb(126, 3, 3);">Calligraphy Equipment</h1>
+            <p id="ceqInfo">
+                Find the best pens, nibs, paper, and other tools and start your calligraphic journey!
+            </p>
+            <ul class="insection">
+                <li><a style="color: brown; font-size: 2.5em;" href="Shop.html"><Strong>Shop</Strong></a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

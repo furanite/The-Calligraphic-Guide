@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: ara;
+    src: url(fonts/aAwalRamadhan.ttf);
+}
+@font-face{
+    font-family: fanc;
+    src: url(fonts/ChopinScript.otf);
+}
+@font-face{
+    font-family: gothiq;
+    src: url(fonts/Plain\ Germanica.ttf);
+}
+@font-face{
+    font-family: techniq;
+    src: url(fonts/codex.ttf);
+}
+@font-face{
+    font-family: uniq;
+    src: url(fonts/Callaghands.otf);
+}
+body{
+    background-image: url('imges/imges/vine-pattern-tiled-background-vector-material-24003.jpg');
+    background-repeat: repeat;
+    background-color: palegoldenrod;
+    display: flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+    /* align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row; */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+.banner1{
+    width: 100%;
+    height: 10%;
+}
+.navigation{
+    /* background-color: aliceblue; */
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    z-index: 11;
+}
+.insection{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.insection a{
+    display: none;
+    margin-left: 10px;
+    font-size: 1.7em;
+    text-decoration: none;
+    padding: 7px;
+    background-color: rgba(65, 59, 59, 0.6);
+    color: white;
+}
+.navigation ul{
+    background-color:  rgba(222, 184, 135, 0.6);
+    width: 100%;
+    height: fit-content;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5em;
+}
+.navigation ul li ul li{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navigation ul a{
+    color: beige;
+    text-decoration: none;
+}
+.navigation li ul{
+    margin-top: 0%;
+    padding: 0%;
+    padding: 10px;
+    display: none;
+}
+.navigation li:hover ul{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    display: block;   
+}
+.navigation li li{
+    padding-bottom: 5px;
+    background-color: rgba(222, 184, 135, 0.6);
+}
+.navigation li li:hover{
+    font-size: 1.25em;
+    background-color: rgb(87, 0, 40);
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+}
+section h1{
+    font-size: 7em;
+    color: color;
+}
+section p{
+    font-size: 2em;
+    color: color;
+    color: aliceblue;
+    background-color: rgb(0,0,0, 0.6);
+    padding: 8px;
+}
+#logo{
+    background-image: url(imges/TCG.png);
+    position: absolute;
+    position: fixed;
+    height: 4em;
+    top: 17px;
+    left: 2.4%;
+    z-index: 12;
+}
+section#main{
+    background: url('imges/Calbackg1.jpg') no-repeat center center/cover;;
+}
+section#main h1{
+    font-family: fanc;
+}
+section#IslamicCalligraphy{
+    background: url('imges/786-1.jpg') no-repeat center center/cover;;
+    z-index: 5;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section#IslamicCalligraphy h1{
+    font-family: ara;
+    color: beige;
+}
+section#WCalli{
+    background: url('imges/WC2.gif') no-repeat center center/cover;;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section#WCalli h1{
+    font-family: gothiq;
+    color: beige;
+}
+section#CG{
+    background: url('imges/cgu.png') no-repeat center center/cover;;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section#CG h1{
+    font-family: techniq;
+}
+section#CEquip{
+    background: url('imges/ceq1.jpg') no-repeat center center/cover;;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section#CG h1{
+    font-family: uniq;
+}
+#ICinfo, #cgInfo, #wcInfo, #ceqInfo{
+    display: none;
+}

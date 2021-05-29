@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: ara;
+    src: url(fonts/aAwalRamadhan.ttf);
+}
+@font-face{
+    font-family: fanc;
+    src: url(fonts/ChopinScript.otf);
+}
+@font-face{
+    font-family: gothiq;
+    src: url(fonts/Plain\ Germanica.ttf);
+}
+@font-face{
+    font-family: techniq;
+    src: url(fonts/codex.ttf);
+}
+@font-face{
+    font-family: uniq;
+    src: url(fonts/Callaghands.otf);
+}
+body{
+    background-image: url('imges/imges/vine-pattern-tiled-background-vector-material-24003.jpg');
+    background-repeat: repeat;
+    background-color: palegoldenrod;
+    display: flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+    /* align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row; */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+.banner1{
+    width: 100%;
+    height: 10%;
+}
+.navigation{
+    /* background-color: aliceblue; */
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    z-index: 11;
+}
+.insection{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.insection a{
+    display: none;
+    margin-left: 10px;
+    font-size: 1.7em;
+    text-decoration: none;
+    padding: 7px;
+    background-color: rgba(65, 59, 59, 0.6);
+    color: white;
+}
+.navigation ul{
+    background-color:  rgba(222, 184, 135, 0.6);
+    width: 100%;
+    height: 5em;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation ul li ul li{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navigation ul a{
+    color: beige;
+    text-decoration: none;
+}
+.navigation li ul{
+    margin-top: 0%;
+    padding: 0%;
+    padding: 10px;
+    display: none;
+}
+.navigation li:hover ul{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    display: block;   
+}
+.navigation li li{
+    padding-bottom: 5px;
+    background-color: rgba(222, 184, 135, 0.6);
+}
+.navigation li li:hover{
+    font-size: 1.25em;
+    background-color: rgb(87, 0, 40);
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+#logo{
+    background-image: url(imges/TCG.png);
+    position: absolute;
+    position: fixed;
+    height: 4em;
+    top: 17px;
+    left: 2.4%;
+    z-index: 12;
+}
+
+.container1{
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+.container1 > div{
+    border: 4px solid black;
+    height: 244px;
+    background-size: cover;
+}
+.bg1{
+    background-image: url(imges/A2.jpg);
+}
+.bg2{
+    background-image: url(imges/A1.jpg);
+}
+.bg3{
+    background-image: url(imges/A3.jpg);
+}
+.bg4{
+    background-image: url(imges/A4.jpg);
+}
+.bg5{
+    background-image: url(imges/786-2.jpg);
+}
+.bg6{
+    background-image: url(imges/786.jpg);
+}
+.bg7{
+    background-image: url(imges/786-3.jpg) ;
+}
+.bg8{
+    background-image: url(imges/786-1.jpg);
+}
+.bg9{
+    background-image: url(imges/A6.jpg);
+}.bg10{
+    background-image: url(imges/SectionRIC.jpg);
+}.bg11{
+    background-image: url(imges/ates3.jpg);
+}
+.bg12{
+    background-image: url(imges/A5.jpg);
+}
+.bg13{
+    background-image: url(imges/ates2.jpg);
+}
+.bg14{
+    background-image: url(imges/ates1.jpg);
+}
+.bg15{
+    background-image: url(imges/qalamimg.jpg);
+}
+.bg16{
+    background-image: url(imges/z.jpg);
+}

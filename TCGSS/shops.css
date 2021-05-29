@@ -1,0 +1,388 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: ara;
+    src: url(fonts/aAwalRamadhan.ttf);
+}
+@font-face{
+    font-family: fanc;
+    src: url(fonts/ChopinScript.otf);
+}
+@font-face{
+    font-family: gothiq;
+    src: url(fonts/Plain\ Germanica.ttf);
+}
+@font-face{
+    font-family: techniq;
+    src: url(fonts/codex.ttf);
+}
+@font-face{
+    font-family: uniq;
+    src: url(fonts/Callaghands.otf);
+}
+body{
+    /* background-image: url('imges/imges/vine-pattern-tiled-background-vector-material-24003.jpg');
+    background-repeat: repeat; */
+    background-color: palegoldenrod;
+    display: flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+    /* align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row; */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+.banner1{
+    width: 100%;
+    height: 10%;
+}
+.navigation{
+    /* background-color: aliceblue; */
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    z-index: 11;
+}
+.insection{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.insection a{
+    display: none;
+    margin-left: 10px;
+    font-size: 1.7em;
+    text-decoration: none;
+    padding: 7px;
+    background-color: rgba(65, 59, 59, 0.6);
+    color: white;
+}
+.navigation ul{
+    background-color:  rgba(222, 184, 135, 0.6);
+    width: 100%;
+    height: 5em;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation ul li ul li{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navigation ul a{
+    color: beige;
+    text-decoration: none;
+}
+.navigation li ul{
+    margin-top: 0%;
+    padding: 0%;
+    padding: 10px;
+    display: none;
+}
+.navigation li:hover ul{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    display: block;   
+}
+.navigation li li{
+    padding-bottom: 5px;
+    background-color: rgba(222, 184, 135, 0.6);
+}
+.navigation li li:hover{
+    font-size: 1.25em;
+    background-color: rgb(87, 0, 40);
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+}
+section h1{
+    font-size: 7em;
+    color: color;
+}
+section p{
+    font-size: 2em;
+    color: color;
+    color: aliceblue;
+    background-color: rgb(0,0,0, 0.6);
+    padding: 8px;
+}
+#logo{
+    background-image: url(imges/TCG.png);
+    position: absolute;
+    position: fixed;
+    height: 4em;
+    top: 17px;
+    left: 2.4%;
+    z-index: 12;
+}
+section#main{
+    background: url('imges/Calbackg1.jpg') no-repeat center center/cover;;
+}
+section#main h1{
+    font-family: fanc;
+}
+section#IslamicCalligraphy{
+    background: url('imges/786-1.jpg') no-repeat center center/cover;;
+    z-index: 5;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section#IslamicCalligraphy h1{
+    font-family: ara;
+    color: beige;
+}
+section#WCalli{
+    background: url('imges/WC2.gif') no-repeat center center/cover;;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section#WCalli h1{
+    font-family: gothiq;
+    color: beige;
+}
+section#CG{
+    background: url('imges/cgu.png') no-repeat center center/cover;;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section#CG h1{
+    font-family: techniq;
+}
+section#CEquip{
+    background: url('imges/ceq1.jpg') no-repeat center center/cover;;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section#CG h1{
+    font-family: uniq;
+}
+#ICinfo, #cgInfo, #wcInfo, #ceqInfo{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.cardsection{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 200px 180px 80px;
+    grid-template-areas: "image" "text" "price";
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin-left: 60px;
+}
+.container .cardink{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 200px 180px 80px;
+    grid-template-areas: "image" "text" "price";
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin-left: 20px;
+}
+.cardimg{
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#I1.cardimg, #w1.cardimg{
+    background: url("imges/parapen.jpg");
+    background-size: 87%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#I2.cardimg{
+    background: url("imges/qalamimg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#w2.cardimg{
+    background: url("imges/oblq.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#w3.cardimg{
+    background: url("imges/wcset.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#p1.cardimg{
+    background: url("imges/z.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#p2.cardimg{
+    background: url("imges/opaper.png");
+    background-size: cover;
+    background-position: center;
+}
+#ink1.cardimg{
+    background: url("imges/bink.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ink2.cardimg{
+    background: url("imges/rink.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ink3.cardimg{
+    background: url("imges/silink.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ink4.cardimg{
+    background: url("imges/gink.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#cart1, #cart2, #cart3, #cart4, #cart5, #cart6, #cart7, #cart8, #cart9, #cart10, #cart11 {
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 5px;
+    margin: 0%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    left: 260;
+    top: -460;
+}
+.cardstxt{
+    grid-area: text;
+    margin: 25px;
+}
+.cardstxt h2{
+    margin-top: 0px;
+    font-size: 28px;
+}
+.cardstxt p{
+    /* color: antiquewhite; */
+    font-size: 1.5em;
+    position: relative;
+    top: 30px;
+}
+.cardstxt p a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+.cprice{
+    grid-area: price;
+    display: flexbox;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: burlywood;
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#cart{
+    font-size: 1.9em;
+    font-weight: bold;
+    font-family: uniq;
+    height: 2em;
+    width: 2.7em;
+    border: 4px solid black;
+    background-color: rgba(216, 112, 147, 0.822);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    padding: 0px;
+    text-align: center;
+    border-radius: 100px;
+    position: fixed;
+    left: 92%;
+    top: 86%;
+    z-index: 19;
+    padding-top: 16px;
+}
+
+#cartcontent{
+    position: absolute;
+    top: 34%;
+    left: 74%;
+    width: max-content;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(146, 0, 44, 0.89);
+    border: 2px solid black;
+    border-radius: 40px;
+    z-index: 16;
+    padding-bottom: 1em;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+#cartcontent h2{
+    padding-top: 10px;
+    text-align: center;
+    color: bisque;
+}
+#cartcontent table{
+    width: max-content;
+    display: none;
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 18px;
+}
+
+
+
+
+
+
